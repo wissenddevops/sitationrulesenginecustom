@@ -1,0 +1,12 @@
+sitation_custom_rule_homepage:
+  path:     /
+  defaults: { _controller: SitationCustomRuleBundle:Default:index }
+
+# sitation_testing:
+#   path: /testing
+#   defaults: { _controller: sitation.action_applier.image_customisation:applyAction }
+
+sitation_product_update_customise_image:
+  path: /product/update
+  defaults: { _controller: sitation.defaultcontroller:productUpdateAction }
+  methods: [POST]

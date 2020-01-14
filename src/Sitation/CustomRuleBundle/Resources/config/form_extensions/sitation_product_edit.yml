@@ -1,0 +1,8 @@
+extensions:
+  pim-product-edit-form-save: ~
+
+  pim-product-edit-form-sitation-save:
+    module: sitation/product-edit-form/save
+    parent: pim-product-edit-form
+    targetZone: buttons
+    position: 0

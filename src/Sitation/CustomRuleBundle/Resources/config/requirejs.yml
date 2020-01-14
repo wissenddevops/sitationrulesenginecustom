@@ -1,0 +1,15 @@
+config:
+  paths:
+    sitation/product-edit-form/save: sitationcustomrule/js/controller/product_saver
+      
+  config:
+    pim/fetcher-registry:
+      fetchers:
+        update-customised-image:
+          module: pim/base-fetcher
+          options:
+            urls:
+              get: sitation_testing
+              
+    # sitation/product-edit-form/save1:
+    #   url: pim_enrich_product_rest_post

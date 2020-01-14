@@ -1,0 +1,31 @@
+Sitation\CustomRuleBundle\Model\ProductImageCustomisationAction:
+  constraints:
+    - Akeneo\Pim\Automation\RuleEngine\Bundle\Validator\Constraint\PropertyAction: ~
+  properties:
+    field:
+      - Type:
+          type: string
+      - NotBlank: ~
+      - Akeneo\Pim\Automation\RuleEngine\Bundle\Validator\Constraint\ExistingSetField: ~
+    attributes:
+      - Type:
+          type: image
+      - NotBlank:
+          message: The key "attributes" is missing or empty.
+      - Sitation\CustomRuleBundle\Controller\ExistingAttributes: ~  
+    imagecustomisation:
+      - Type:
+          type: string
+      - NotBlank: ~
+      - Length:
+         max: 255
+    # attributes:
+    #   - Type:
+    #       type: image
+    #   - NotBlank:
+    #       message: The key "attributes" is missing or empty.
+    #   - Sitation\CustomRuleBundle\Controller\ExistingAttributes: ~
+    # imagecustomisation:
+    #   - Type:
+    #       type: string
+    #   - NotBlank: ~ 
